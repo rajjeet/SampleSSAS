@@ -287,37 +287,11 @@
         <Attribute dwd:design-time-name="3098b316-9198-4ed7-bb69-8bec3c1edbda">
           <AttributeID>ProductSourceKey</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="00265fca-bf2d-4884-8bdb-b76c58eab9a3">
-          <AttributeID>SubcategoryKey</AttributeID>
+        <Attribute dwd:design-time-name="749402a8-2e4d-44fe-b5b2-8b7eefb71682">
+          <AttributeID>Subcategory Name</AttributeID>
         </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="80269023-8e93-432c-967b-e49ac91086a6">
-      <ID>Subcategory</ID>
-      <Name>Subcategory</Name>
-      <DimensionID>Subcategory</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="010737f7-147f-438a-b7d8-28758cc63d85">
-          <AttributeID>Subcategory</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="ab1475aa-a98c-4b62-8354-45083f73301d">
-          <AttributeID>SubcategorySourceKey</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="6bc8db85-c8c9-489e-b080-fcb8b4bc664e">
-          <AttributeID>CategoryKey</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="705d5a84-842d-447d-b04f-2b99dd00a0c5">
-      <ID>Category</ID>
-      <Name>Category</Name>
-      <DimensionID>Category</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="daf571d6-2bf6-4499-9047-b8f169fc051b">
-          <AttributeID>Cataegory</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="17afac32-44f5-43a0-9e9d-a8f803a7094f">
-          <AttributeID>Cate</AttributeID>
+        <Attribute dwd:design-time-name="882c8d50-eeba-4cab-8132-121feaf0386c">
+          <AttributeID>Category Name</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
