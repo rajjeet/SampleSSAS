@@ -3,6 +3,24 @@
   <MeasureGroups>
     <MeasureGroup>
       <ID>ResellerSales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fe66cfc6-2551-487d-9f23-99e4eb844ac0">
+          <ID>ResellerSales</ID>
+          <Name>ResellerSales</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="f920d092-360a-4a55-90bd-3086d46a6125">
+            <DataSourceID>Sample SSAS</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>ResellerSales</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>

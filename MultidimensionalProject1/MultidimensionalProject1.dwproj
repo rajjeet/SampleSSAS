@@ -20,24 +20,28 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Date.dim</Name>
-      <FullPath>Date.dim</FullPath>
+      <Name>td_Date.dim</Name>
+      <FullPath>td_Date.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Product.dim</Name>
-      <FullPath>Product.dim</FullPath>
+      <Name>td_Product.dim</Name>
+      <FullPath>td_Product.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Subcategory.dim</Name>
-      <FullPath>Subcategory.dim</FullPath>
+      <Name>td_Subcategory.dim</Name>
+      <FullPath>td_Subcategory.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Category.dim</Name>
-      <FullPath>Category.dim</FullPath>
+      <Name>td_Category.dim</Name>
+      <FullPath>td_Category.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>SalesTerritory.dim</Name>
-      <FullPath>SalesTerritory.dim</FullPath>
+      <Name>td_SalesTerritory.dim</Name>
+      <FullPath>td_SalesTerritory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>bu_SalesTerritory.dim</Name>
+      <FullPath>bu_SalesTerritory.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -45,11 +49,19 @@
       <Name>ds_SampleSSAS.ds</Name>
       <FullPath>ds_SampleSSAS.ds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ds_AdventureWorksDW2012.ds</Name>
+      <FullPath>ds_AdventureWorksDW2012.ds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
       <Name>dsv_SampleSSAS.dsv</Name>
       <FullPath>dsv_SampleSSAS.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>dsv_AdventureWorksDW2012.dsv</Name>
+      <FullPath>dsv_AdventureWorksDW2012.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -62,11 +74,21 @@
             <Name>Sample SSAS</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=SampleSSAS</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>dsv_AdventureWorksDW2012</Id>
+            <Name>dsv_AdventureWorksDW2012</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2012</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Sample SSAS</Id>
             <Name>Sample SSAS</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>dsv_AdventureWorksDW2012</Id>
+            <Name>dsv_AdventureWorksDW2012</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>

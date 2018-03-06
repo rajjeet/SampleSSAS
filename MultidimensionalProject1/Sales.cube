@@ -1,8 +1,8 @@
 ﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a703aa94-0e50-4189-8527-e3e5a397c873" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>New cube</ID>
   <Name>Sales</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
@@ -219,7 +219,7 @@
       <Value>89</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
     <Dimension dwd:design-time-name="adbc6984-9f33-448f-a5d3-166acbd2bc3f">
@@ -329,9 +329,6 @@
         <Attribute dwd:design-time-name="73d68100-0341-4392-9196-964df6941b99">
           <AttributeID>SalesTerritory</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8e320c2b-426d-459a-b683-f7f1f69ebbfe">
-          <AttributeID>RegionSourceKey</AttributeID>
-        </Attribute>
         <Attribute dwd:design-time-name="4b10608e-01b5-4760-9a16-ae490949d493">
           <AttributeID>Country</AttributeID>
         </Attribute>
@@ -345,9 +342,9 @@
     <MeasureGroup dwd:design-time-name="147b68f3-d504-4c7e-9891-93fed3109c10">
       <ID>ResellerSales</ID>
       <Name>ResellerSales</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
         <Measure dwd:design-time-name="4c30af65-9498-4615-98a2-b86558f94866">
@@ -442,24 +439,7 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions>
-        <Partition dwd:design-time-name="1dec7e88-1f27-4265-aec3-a8c3d110c0eb">
-          <ID>ResellerSales</ID>
-          <Name>ResellerSales</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="TableBinding" dwd:design-time-name="f920d092-360a-4a55-90bd-3086d46a6125">
-            <DataSourceID>Sample SSAS</DataSourceID>
-            <DbSchemaName>dbo</DbSchemaName>
-            <DbTableName>ResellerSales</DbTableName>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
+      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="85b41bc0-cb59-4dd4-bbd5-e64896b8ed0d">

@@ -122,5 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Permissions.sql" />
+    <Build Include="Category.sql" />
+    <Build Include="Date.sql" />
+    <Build Include="Product.sql" />
+    <Build Include="ResellerSales.sql" />
+    <Build Include="SalesTerritory.sql" />
+    <Build Include="Subcategory.sql" />
   </ItemGroup>
 </Project>
