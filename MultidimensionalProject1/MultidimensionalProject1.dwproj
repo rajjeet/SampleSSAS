@@ -6,10 +6,71 @@
     <Name>MultidimensionalProject1.database</Name>
     <FullPath>MultidimensionalProject1.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Sales.cube</Name>
+      <FullPath>Sales.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Sales.partitions</Name>
+          <FullPath>Sales.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product.dim</Name>
+      <FullPath>Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Subcategory.dim</Name>
+      <FullPath>Subcategory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Category.dim</Name>
+      <FullPath>Category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SalesTerritory.dim</Name>
+      <FullPath>SalesTerritory.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>ds_SampleSSAS.ds</Name>
+      <FullPath>ds_SampleSSAS.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>dsv_SampleSSAS.dsv</Name>
+      <FullPath>dsv_SampleSSAS.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Sample SSAS</Id>
+            <Name>Sample SSAS</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=SampleSSAS</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Sample SSAS</Id>
+            <Name>Sample SSAS</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
