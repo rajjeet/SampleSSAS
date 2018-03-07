@@ -265,5 +265,28 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="0e3e548e-bf0c-4bcb-b2c1-806b652cb061">
+      <ID>Hierarchy</ID>
+      <Name>Products</Name>
+      <Levels>
+        <Level dwd:design-time-name="f592b35c-650a-47ae-a3bf-c9954cbc2e69">
+          <ID>Category</ID>
+          <Name>Category</Name>
+          <SourceAttributeID>Product Category Key</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ccf56a38-e3d1-4a4e-88be-5c42d29b3b95">
+          <ID>Subcategory</ID>
+          <Name>Subcategory</Name>
+          <SourceAttributeID>Product Subcategory Key</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="948bfdf1-6af3-46ba-be4a-0d0c28eb34b9">
+          <ID>Product</ID>
+          <Name>Product</Name>
+          <SourceAttributeID>Product Key</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
