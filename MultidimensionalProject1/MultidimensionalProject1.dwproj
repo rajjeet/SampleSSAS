@@ -28,20 +28,24 @@
       <FullPath>td_Product.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>td_Subcategory.dim</Name>
-      <FullPath>td_Subcategory.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>td_Category.dim</Name>
-      <FullPath>td_Category.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>td_SalesTerritory.dim</Name>
       <FullPath>td_SalesTerritory.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>bu_SalesTerritory.dim</Name>
       <FullPath>bu_SalesTerritory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>bu_Product.dim</Name>
+      <FullPath>bu_Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>bu_Date.dim</Name>
+      <FullPath>bu_Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>bu_Time.dim</Name>
+      <FullPath>bu_Time.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
