@@ -65,6 +65,33 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="76">
+            <Shape Id="Region" Expanded="false">
+              <Attributes>
+                <Attribute Id="Region" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Country" Expanded="false">
+              <Attributes>
+                <Attribute Id="Country" />
+              </Attributes>
+              <Position x="120" y="20" />
+            </Shape>
+            <Shape Id="Group" Expanded="false">
+              <Attributes>
+                <Attribute Id="Group" />
+              </Attributes>
+              <Position x="220" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
   <State>Unprocessed</State>
@@ -102,13 +129,10 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="f2f7bc2a-5c15-4c81-8421-15b31737185b">
+        <AttributeRelationship dwd:design-time-name="4edd35f0-da24-497e-9b18-9beb6e747cb9">
           <AttributeID>Country</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Country</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="055de40d-b7f7-4c39-b7af-1d20b0a34be1">
-          <AttributeID>Group</AttributeID>
-          <Name>Group</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -127,6 +151,13 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2f7c01c1-6143-443a-b65c-e1b90efba903">
+          <AttributeID>Group</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Group</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
