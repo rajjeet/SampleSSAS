@@ -61,6 +61,10 @@
       <Name>bu_Employee.dim</Name>
       <FullPath>bu_Employee.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>bu_Customer.dim</Name>
+      <FullPath>bu_Customer.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
