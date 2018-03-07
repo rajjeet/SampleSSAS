@@ -47,6 +47,10 @@
       <Name>bu_Time.dim</Name>
       <FullPath>bu_Time.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>bu_Employee.dim</Name>
+      <FullPath>bu_Employee.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
