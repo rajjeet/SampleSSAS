@@ -38,8 +38,894 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>60398</EstimatedRows>
+          <AggregationDesignID>AggregationDesign_30</AggregationDesignID>
         </Partition>
       </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign_30</ID>
+          <Name>AggregationDesign_30</Name>
+          <CreatedTimestamp>2018-03-07T22:54:32.863333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-03-07T22:54:32.863333Z</LastSchemaUpdate>
+          <EstimatedRows>60398</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Order Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>2191</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                  <EstimatedCount>72</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Region</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Country</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Group</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Due Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>2191</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                  <EstimatedCount>72</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Ship Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                  <EstimatedCount>2191</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                  <EstimatedCount>72</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>bu_Customer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer</AttributeID>
+                  <EstimatedCount>18484</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>bu_Product</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product Key</AttributeID>
+                  <EstimatedCount>606</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Color</AttributeID>
+                  <EstimatedCount>10</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Subcategory Key</AttributeID>
+                  <EstimatedCount>37</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Category Key</AttributeID>
+                  <EstimatedCount>4</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Region</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Region</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Color</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Subcategory Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Color</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Color</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Region</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Quarter</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Region</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Order Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_SalesTerritory</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Due Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Ship Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>bu_Product</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Product Category Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>

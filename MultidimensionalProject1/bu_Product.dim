@@ -193,6 +193,7 @@
       <ID>Product Key</ID>
       <Name>Product</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>606</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7097f584-6843-48f6-a50d-191572aedf3d">
           <DataType>Integer</DataType>
@@ -245,6 +246,7 @@
     <Attribute dwd:design-time-name="59b201c2-70d8-42fd-95ff-efd81974484f">
       <ID>Color</ID>
       <Name>Color</Name>
+      <EstimatedCount>10</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="384369a3-7be1-495b-9821-5a97207dfc9d">
           <DataType>WChar</DataType>
@@ -291,6 +293,7 @@
     <Attribute dwd:design-time-name="a04bda38-a789-4cf8-bdf1-bd7b186e8e39">
       <ID>Product Subcategory Key</ID>
       <Name>Subcategory</Name>
+      <EstimatedCount>37</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="8cbe7cff-fc50-42e3-af9b-bc6a23725531">
           <DataType>Integer</DataType>
@@ -336,6 +339,7 @@
     <Attribute dwd:design-time-name="008607f5-7a37-400a-aa59-61e5684cfaab">
       <ID>Product Category Key</ID>
       <Name>Category</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="79d4f06b-5269-4458-a5e5-b8ef0b0d4242">
           <DataType>Integer</DataType>

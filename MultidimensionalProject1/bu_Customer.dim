@@ -103,6 +103,7 @@
       <ID>Customer</ID>
       <Name>Customer</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>18484</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="47bedf8d-76fe-497e-aa88-310824fdbdbb">
           <DataType>Integer</DataType>
@@ -132,6 +133,7 @@
     <Attribute dwd:design-time-name="daabf291-6802-4a93-854e-c1c16d5e9ae4">
       <ID>Gender</ID>
       <Name>Gender</Name>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="e157611f-2e38-4b3c-b3b6-a476f34dfd4c">
           <DataType>WChar</DataType>

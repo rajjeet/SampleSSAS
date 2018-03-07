@@ -117,6 +117,7 @@
       <Name>Date</Name>
       <Type>Days</Type>
       <Usage>Key</Usage>
+      <EstimatedCount>2191</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="00ad0bf2-cf99-41f3-963c-f148e0359dae">
           <DataType>Integer</DataType>
@@ -146,6 +147,7 @@
       <ID>Calendar Year</ID>
       <Name>Calendar Year</Name>
       <Type>Years</Type>
+      <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a8d09bda-339d-4636-af52-bd7eccf14081">
           <DataType>SmallInt</DataType>
@@ -163,6 +165,7 @@
       <ID>Quarter</ID>
       <Name>Quarter</Name>
       <Type>Quarters</Type>
+      <EstimatedCount>24</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="9b4d38ab-0b35-4b78-98f5-362c1dccefa4">
           <DataType>WChar</DataType>
@@ -187,6 +190,7 @@
       <ID>Month</ID>
       <Name>Month</Name>
       <Type>Months</Type>
+      <EstimatedCount>72</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="838b788d-465c-4249-b870-7b3f7fbe8282">
           <DataType>SmallInt</DataType>

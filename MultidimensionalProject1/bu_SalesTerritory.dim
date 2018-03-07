@@ -111,6 +111,7 @@
       <ID>Region</ID>
       <Name>Region</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>11</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="7c2da8c2-4881-4333-9ad8-4911605243cb">
           <DataType>Integer</DataType>
@@ -141,6 +142,7 @@
     <Attribute dwd:design-time-name="407b80ae-1633-4017-8725-3df9ad8cf36d">
       <ID>Country</ID>
       <Name>Country</Name>
+      <EstimatedCount>7</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c632d182-6081-4d7e-abed-e5cae50855b2">
           <DataType>WChar</DataType>
@@ -165,6 +167,7 @@
     <Attribute dwd:design-time-name="985cc7bf-e3c0-4aa0-b9c1-70437561d891">
       <ID>Group</ID>
       <Name>Group</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="55273540-5216-498c-a643-625f625ba4a3">
           <DataType>WChar</DataType>
