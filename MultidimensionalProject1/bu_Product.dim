@@ -176,6 +176,18 @@
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <UnknownMemberName>Unassigned Product</UnknownMemberName>
+  <UnknownMemberTranslations>
+    <UnknownMemberTranslation dwd:design-time-name="84c5ba0b-4063-430a-ab1b-84fb098d9fb2">
+      <Language>3082</Language>
+      <Caption>Productos Desconocidos</Caption>
+    </UnknownMemberTranslation>
+  </UnknownMemberTranslations>
+  <Translations>
+    <Translation dwd:design-time-name="3c60845b-266a-46cd-830b-b178761fe14c">
+      <Language>3082</Language>
+      <Caption>Producto</Caption>
+    </Translation>
+  </Translations>
   <Attributes>
     <Attribute dwd:design-time-name="cabf3016-8f9a-4fd3-a05f-dc48f76783cc">
       <ID>Product Key</ID>
@@ -198,6 +210,21 @@
           <ColumnID>EnglishProductName</ColumnID>
         </Source>
       </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="3897be37-59f1-40a9-85ae-6fb701e25760">
+          <Language>3082</Language>
+          <Caption>Producto</Caption>
+          <CaptionColumn dwd:design-time-name="6cb0d6b0-df54-4440-a406-9fd67bd695e3">
+            <DataType>WChar</DataType>
+            <DataSize>50</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b1a24320-e6c7-4bff-bd0d-d55644e01cd1">
+              <TableID>dbo_DimProduct</TableID>
+              <ColumnID>SpanishProductName</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="15a8adfd-8b83-4293-90c9-18524038b95d">
           <AttributeID>Color</AttributeID>
@@ -228,6 +255,12 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="3822e171-0156-40f2-a0d6-ec32204fe99c">
+          <Language>3082</Language>
+          <Caption>Color</Caption>
+        </Translation>
+      </Translations>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -245,6 +278,12 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="1a121238-3dec-4d62-8df1-55172a4e3d90">
+          <Language>3082</Language>
+          <Caption>Tamano</Caption>
+        </Translation>
+      </Translations>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -270,6 +309,21 @@
           <ColumnID>EnglishProductSubcategoryName</ColumnID>
         </Source>
       </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7818775f-e92e-4349-bea6-6fdbbceff6a9">
+          <Language>3082</Language>
+          <Caption>Subcategoria</Caption>
+          <CaptionColumn dwd:design-time-name="5fb6bec4-2aa9-4a8c-9192-25a19787c450">
+            <DataType>WChar</DataType>
+            <DataSize>50</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f4bcd83d-6828-4dee-baa0-fc4f3c8a5dbc">
+              <TableID>dbo_DimProductSubcategory</TableID>
+              <ColumnID>SpanishProductSubcategoryName</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="7750c523-7d05-4576-81b5-69d73428e22b">
           <AttributeID>Product Category Key</AttributeID>
@@ -300,6 +354,21 @@
           <ColumnID>EnglishProductCategoryName</ColumnID>
         </Source>
       </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="9e224cea-50c0-4923-8612-ab5269783f2f">
+          <Language>3082</Language>
+          <Caption>Categoria</Caption>
+          <CaptionColumn dwd:design-time-name="18ff1145-44d7-4ce8-9ccc-0ec84f1fedac">
+            <DataType>WChar</DataType>
+            <DataSize>50</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cba526d8-2aba-43c0-9cb1-0b40597f402c">
+              <TableID>dbo_DimProductCategory</TableID>
+              <ColumnID>SpanishProductCategoryName</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -308,37 +377,79 @@
     <Hierarchy dwd:design-time-name="0e3e548e-bf0c-4bcb-b2c1-806b652cb061">
       <ID>Hierarchy</ID>
       <Name>Products</Name>
+      <Translations>
+        <Translation dwd:design-time-name="65cbb65a-06db-450b-860b-32a3c519b2f8">
+          <Language>3082</Language>
+          <Caption>Producto</Caption>
+        </Translation>
+      </Translations>
       <Levels>
         <Level dwd:design-time-name="f592b35c-650a-47ae-a3bf-c9954cbc2e69">
           <ID>Category</ID>
           <Name>Category</Name>
           <SourceAttributeID>Product Category Key</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="b5053135-1daa-4ce9-a9f4-c1cee2873141">
+              <Language>3082</Language>
+              <Caption>Categoria</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="ccf56a38-e3d1-4a4e-88be-5c42d29b3b95">
           <ID>Subcategory</ID>
           <Name>Subcategory</Name>
           <SourceAttributeID>Product Subcategory Key</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="5ede2010-b45d-4a30-892e-2549c576db1f">
+              <Language>3082</Language>
+              <Caption>Subcategoria</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="948bfdf1-6af3-46ba-be4a-0d0c28eb34b9">
           <ID>Product</ID>
           <Name>Product</Name>
           <SourceAttributeID>Product Key</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="b56812ae-693f-40fc-a8eb-79b35fb03e64">
+              <Language>3082</Language>
+              <Caption>Producto</Caption>
+            </Translation>
+          </Translations>
         </Level>
       </Levels>
     </Hierarchy>
     <Hierarchy dwd:design-time-name="1f10db39-5cc4-48f0-b91c-868615a9c8d0">
       <ID>Hierarchy 1</ID>
       <Name>Hierarchy</Name>
+      <Translations>
+        <Translation dwd:design-time-name="a95c2d7b-fc39-4d1a-aea2-39f010f4e4e7">
+          <Language>3082</Language>
+          <Caption>Color-Tamano</Caption>
+        </Translation>
+      </Translations>
       <Levels>
         <Level dwd:design-time-name="86725753-c86c-40d9-8a9b-761929aba85b">
           <ID>Color</ID>
           <Name>Color</Name>
           <SourceAttributeID>Color</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="ec30fb82-847e-434a-8afa-ca3590aa4f60">
+              <Language>3082</Language>
+              <Caption>Color</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="133f53e3-f6d0-4821-b35e-eb2c966e9e12">
           <ID>Size</ID>
           <Name>Size</Name>
           <SourceAttributeID>Size</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="58dbe94e-48b8-4911-a396-59b1b7e92d23">
+              <Language>3082</Language>
+              <Caption>Tamano</Caption>
+            </Translation>
+          </Translations>
         </Level>
       </Levels>
     </Hierarchy>
